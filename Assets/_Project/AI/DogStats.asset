@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f068c82943073c8428b288ad66588701, type: 3}
+  m_Name: DogStats
+  m_EditorClassIdentifier: 
+  viewAngle: 50
+  viewDistance: 10
+  rotationInterval: 5
+  lookAroundTime: 50
+  viewWidth: 2
+  rotationSpeed: 3
+  waitTimer: 3
