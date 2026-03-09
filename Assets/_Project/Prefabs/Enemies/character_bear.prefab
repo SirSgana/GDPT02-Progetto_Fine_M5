@@ -205,6 +205,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 8997810328254097488}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb3bed4d3e993b14786d0db474cf23e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8317127787703522877}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb3bed4d3e993b14786d0db474cf23e8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1498018922838987574}
     - targetCorrespondingSourceObject: {fileID: -1130350118116307770, guid: eb3bed4d3e993b14786d0db474cf23e8,
         type: 3}
       insertIndex: -1
@@ -391,3 +399,37 @@ MonoBehaviour:
   waypointThreshold: 0.2
   initialPosition: {x: 0, y: 0, z: 0}
   initialRotation: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &8317127787703522877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953403207428227129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1016533fd6e4dab4f8f5a2fa3eccb6a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+--- !u!65 &1498018922838987574
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8953403207428227129}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1.2}
+  m_Center: {x: 0, y: 0.7, z: 0.5}
