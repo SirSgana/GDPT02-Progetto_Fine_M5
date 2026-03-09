@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3900400839671279542}
   - component: {fileID: 7902257018735407306}
   - component: {fileID: 4872807575394105142}
-  - component: {fileID: 8806392851129717813}
+  - component: {fileID: 1406773991760038925}
   m_Layer: 6
   m_Name: FOV (1)
   m_TagString: Untagged
@@ -84,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8806392851129717813
+--- !u!114 &1406773991760038925
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,10 +93,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8116589824071335136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07ec8d2b24fac4f4691216f25cf1bf9d, type: 3}
+  m_Script: {fileID: 11500000, guid: 50bacde786e4e3d4bae818b8111ab0fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayCount: 10
+  rayCount: 12
   heightOffset: 0.2
   layerMask:
     serializedVersion: 2

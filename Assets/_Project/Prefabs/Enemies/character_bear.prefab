@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &6332707788661742158
+--- !u!1 &7287971559927406081
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2497667748656794101}
-  - component: {fileID: 5252858886406053419}
-  - component: {fileID: 7115701734789024842}
-  - component: {fileID: 1298077732590185340}
-  m_Layer: 6
+  - component: {fileID: 3872973079600932967}
+  - component: {fileID: 4557137674608118305}
+  - component: {fileID: 3955367518914465766}
+  - component: {fileID: 2258524340513419810}
+  m_Layer: 0
   m_Name: FOV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2497667748656794101
+--- !u!4 &3872973079600932967
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6332707788661742158}
+  m_GameObject: {fileID: 7287971559927406081}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.57, z: 0.67}
+  m_LocalPosition: {x: 0, y: 0.7, z: 0.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8578003152302381699}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5252858886406053419
+--- !u!33 &4557137674608118305
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6332707788661742158}
+  m_GameObject: {fileID: 7287971559927406081}
   m_Mesh: {fileID: 0}
---- !u!23 &7115701734789024842
+--- !u!23 &3955367518914465766
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6332707788661742158}
+  m_GameObject: {fileID: 7287971559927406081}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -84,20 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1298077732590185340
+--- !u!114 &2258524340513419810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6332707788661742158}
+  m_GameObject: {fileID: 7287971559927406081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee196d7c7147374bbd3783020b6e31a, type: 3}
+  m_Script: {fileID: 11500000, guid: d76708dc7a7eaad4b91fb79785e540e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rayCount: 12
-  heightOffset: 0.1
+  heightOffset: 0.2
 --- !u!1001 &8106911533060554088
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -187,7 +187,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: eb3bed4d3e993b14786d0db474cf23e8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2497667748656794101}
+      addedObject: {fileID: 3872973079600932967}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb3bed4d3e993b14786d0db474cf23e8,
         type: 3}
@@ -204,7 +204,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb3bed4d3e993b14786d0db474cf23e8,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1567503543001235613}
+      addedObject: {fileID: 8997810328254097488}
     - targetCorrespondingSourceObject: {fileID: -1130350118116307770, guid: eb3bed4d3e993b14786d0db474cf23e8,
         type: 3}
       insertIndex: -1
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74ef360af2e2d9f4aa1a6a55e4c32d13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1567503543001235613
+--- !u!114 &8997810328254097488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -384,10 +384,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   agent: {fileID: 8138781463786994646}
   player: {fileID: 0}
-  stats: {fileID: 11400000, guid: aa58c9c0a5378ab45ad3b4c75e7b55f4, type: 2}
+  stats: {fileID: 11400000, guid: ccb1bd716839dcc4385630256f3e246b, type: 2}
   isDog: 0
   waypoint: []
   currentWaypointIndex: 0
-  waypointThreshold: 0.5
+  waypointThreshold: 0.2
   initialPosition: {x: 0, y: 0, z: 0}
   initialRotation: {x: 0, y: 0, z: 0, w: 0}
