@@ -8,16 +8,25 @@ public class MovingAgentPlayer : MonoBehaviour
     private NavMeshAgent agent;
     private Camera cam;
     private NavMeshPath meshPath;
+    private Animator anim;
 
     private void Awake()
     {
         cam = Camera.main;
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponent<Animator>();
         //lineRenderer = GetComponent<LineRenderer>();
     }
 
     private void Update()
     {
+
+        //Aggiunte dell'animazione 
+        float speed = agent.velocity.magnitude;
+        if (speed < 0.1f) speed = 0f;
+        anim.SetFloat("Speed", speed);
+
+
         if (Input.GetMouseButtonDown(0))
         {
             Debug.Log("hai premuto il mouse");

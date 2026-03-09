@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee196d7c7147374bbd3783020b6e31a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rayCount: 50
+  rayCount: 12
   heightOffset: 0.1
 --- !u!1001 &8106911533060554088
 PrefabInstance:
@@ -356,7 +356,7 @@ NavMeshAgent:
   m_AutoRepath: 1
   m_Height: 1.451
   m_BaseOffset: 0
-  m_WalkableMask: 3
+  m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &3127996296657249696
 MonoBehaviour:

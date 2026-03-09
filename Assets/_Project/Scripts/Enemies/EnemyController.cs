@@ -1,5 +1,5 @@
-using UnityEngine.AI;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
@@ -39,6 +39,7 @@ public class EnemyController : MonoBehaviour
 
     public bool CanSeePlayer()
     {
+
         //Uso le stats del SO_EnemyData per leggere i valori
         float distance = Vector3.Distance(transform.position, player.position);
         if (distance > stats.viewDistance) return false;
@@ -58,20 +59,26 @@ public class EnemyController : MonoBehaviour
                 }
             }
         }
-
-
-
         else //Logica cono
-             {
-                    Vector3 dirToPlayer = (player.position - transform.position).normalized;
-                    if (Vector3.Angle(transform.forward, dirToPlayer) < stats.viewAngle / 2)
+        {
+            Vector3 dirToPlayer = (player.position - transform.position).normalized;
+            if (Vector3.Angle(transform.forward, dirToPlayer) < stats.viewAngle / 2)
+            {
+                if (Physics.Raycast(transform.position, dirToPlayer, out RaycastHit hit, stats.viewDistance))
+                {
+                    if (hit.transform.CompareTag("Player"))
                     {
-                        if (Physics.Raycast(transform.position, dirToPlayer, out RaycastHit hit, stats.viewDistance))
-                        {
-                            return hit.transform == player;
-                        }
+                        Debug.Log("CanSeePlayer: Il raggio sta COLLIDENDO con il tag Player!");
+                        return true;
+                    }
+                    else
+                    {
+                        // Questo ti dice cosa sta colpendo invece del player (es. un muro)
+                        Debug.Log("CanSeePlayer: Il raggio colpisce " + hit.transform.name + " invece del Player");
                     }
                 }
+            }
+        }
         return false;
     }
 
@@ -83,7 +90,7 @@ public class EnemyController : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(transform.position, stats.viewDistance);
             Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere (transform.position, stats.viewAngle);
+            Gizmos.DrawWireSphere(transform.position, stats.viewAngle);
         }
         return;
     }
